@@ -20,6 +20,8 @@ sed -i "s/OpenWrt /0xACE7 build $(TZ=UTC-3 date "+%Y.%m.%d") @ OpenWrt /g" packa
 sed -i 's/"Argone 主题设置"/"主题设置"/g' feeds/ace/luci-app-argone-config/po/zh-cn/argone-config.po
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' feeds/luci/applications/luci-app-turboacc/po/zh-cn/turboacc.po
 
+rm -rf feeds/packages/net/kcptun
+
 # Modify firewall
 #sed -i '/xiaomi.cn/d' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/#echo/echo/g' package/lean/default-settings/files/zzz-default-settings
