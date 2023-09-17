@@ -1,4 +1,4 @@
-（CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_thunder_timecloud=y
 CONFIG_BIND_ENABLE_DOH=y
